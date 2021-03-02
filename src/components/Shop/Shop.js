@@ -4,7 +4,7 @@ import {useState} from 'react';
 
 const Shop = () => {
     const firstEleven = fakeData.slice(3,14);
-   const [products, setProducts] = useState(firstEleven);
+   const [accessories, setAccessories] = useState(firstEleven);
    console.log(firstEleven);
    console.log(fakeData);
    
@@ -12,10 +12,10 @@ const Shop = () => {
     return (
         <div>
             <h1>পরামর্শ থাকলে দিতে পারেন।</h1>
-           <h3>{products.length}</h3>
+           <h3>{accessories.length}</h3>
            <ul>
                {
-                   products.map(product=> <li> {product.name}</li>)
+                   accessories.map(accessory=> <li> {accessory.name}</li>)
 
 
                }
