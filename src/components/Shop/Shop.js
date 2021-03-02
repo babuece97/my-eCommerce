@@ -1,6 +1,7 @@
 import React from 'react';
 import fakeData from '../../fakeData';
 import {useState} from 'react';
+import './Shop.css';
 
 const Shop = () => {
     const firstEleven = fakeData.slice(3,14);
@@ -10,20 +11,18 @@ const Shop = () => {
    
    
     return (
-        <div>
-            <h1>পরামর্শ থাকলে দিতে পারেন।</h1>
-           <h3>{accessories.length}</h3>
-           <ul>
+        <div className="shop-container">
+            <div className="product-container">
+            <ul>
                {
                    accessories.map(accessory=> <li> {accessory.name}</li>)
-
-
                }
+            </ul>
+            </div>
+           <div className="cart-container">
+               <h3>Im cart</h3>
+           </div>
 
-
-
-
-           </ul>
         </div>
         
     );
