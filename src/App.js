@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
-import Hheader from './components/Header/Hheader';
+import গতকাল from './components/Header/গতকাল';
+import Shop from './components/Shop/Shop';
 
 
 function App() {
   return (
     <div>
-      <Hheader>ki kos</Hheader>
+      <গতকাল></গতকাল>
+      <Shop></Shop>
     </div>
   );
 }
