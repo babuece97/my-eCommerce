@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
-import গতকাল from './components/Header/গতকাল';
+import গতকালR from './components/Header/গতকাল';
 import ProducttF from './components/FProduct/fProduct';
-import Shop from './components/Shop/Shop';
+import Shoppp from './components/Shop/Shop';
 
 
 function App() {
   return (
     <div>
-      <গতকাল></গতকাল>
-      <Shop></Shop>
+      <গতকালR></গতকালR>
+      <Shoppp></Shoppp>
       <ProducttF></ProducttF> // tag matter
     </div>
   );
