@@ -8,9 +8,8 @@ import Shoppp from './components/Shop/Shop';
 function App() {
   return (
     <div>
-      <গতকালR></গতকালR>
-      <Shoppp></Shoppp>
-      <ProducttF></ProducttF> // tag matter
+      <গতকালR></গতকালR> 
+      <Shoppp></Shoppp>  
     </div>
   );
 }
