@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import গতকাল from './components/Header/গতকাল';
+import ProducttF from './components/FProduct/fProduct';
 import Shop from './components/Shop/Shop';
 
 
@@ -9,6 +10,7 @@ function App() {
     <div>
       <গতকাল></গতকাল>
       <Shop></Shop>
+      <ProducttF></ProducttF> // tag matter
     </div>
   );
 }
