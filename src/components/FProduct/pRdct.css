@@ -9,7 +9,10 @@
 .item-name {
     color: purple;
     font-weight: 8;
-   
-
-
+}
+.item-button {
+    background-color:rgb(166, 255, 0);
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
 }
