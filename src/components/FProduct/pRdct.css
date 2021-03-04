@@ -1,0 +1,15 @@
+.item {
+    display: flex;
+    border-bottom: solid yellow;
+    margin-bottom: 5px;
+    margin-right: 7px;
+
+
+}
+.item-name {
+    color: purple;
+    font-weight: 8;
+   
+
+
+}
