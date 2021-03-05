@@ -7,7 +7,10 @@ import Productzz from '../FProduct/fProduct.js';
 const Shop = () => {
     const firstEleven = fakeData.slice(3,9);
    const [accessories, setAccessories] = useState(firstEleven);
-   console.log(firstEleven);
+//    console.log(firstEleven);
+   const handelADDDiTemmm =(jinish)=> {
+       console.log('jinis added', jinish);
+   }
    
    
     return (
@@ -15,7 +18,9 @@ const Shop = () => {
             <div className="product-container">
             
         {
-            accessories.map(accessory=> <Productzz item= {accessory}> </Productzz>)
+            accessories.map(accessory=> <Productzz 
+                handelADDDiTemmm = {handelADDDiTemmm}
+                item= {accessory}> </Productzz>)
         }
     
             </div>
