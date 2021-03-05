@@ -3,14 +3,20 @@ import fakeData from '../../fakeData';
 import {useState} from 'react';
 import './Shop.css';
 import Productzz from '../FProduct/fProduct.js';
+import Cart from '../Cart/Cart';
 
 const Shop = () => {
     const firstEleven = fakeData.slice(3,9);
    const [accessories, setAccessories] = useState(firstEleven);
+   const [cart, setCart] =useState([]);
 //    console.log(firstEleven);
+
    const handelADDDiTemmm =(jinish)=> {
-       console.log('jinis added', jinish);
+    //    console.log('jinis added', jinish);
+       const newCart = [...cart, jinish];
+       setCart(newCart);
    }
+  
    
    
     return (
@@ -25,7 +31,7 @@ const Shop = () => {
     
             </div>
            <div className="cart-container">
-               <h3>Im cart</h3>
+            <Cart cart= {cart}> </Cart>
            </div>
 
         </div>
