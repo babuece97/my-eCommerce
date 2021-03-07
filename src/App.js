@@ -20,7 +20,7 @@ function App() {
       <গতকালR>
       </গতকালR> 
       <Router>
-        <switch>
+        <Switch>
           <Route path="/butik">
           <Shoppp></Shoppp> 
           </Route>
@@ -33,14 +33,12 @@ function App() {
           <Route  exact path="/">
           <Shoppp></Shoppp> 
           </Route>
-
-         <Route path="*">
-            <NotMatch></NotMatch>
+             <Route path="*">
+              <NotMatch></NotMatch>
             </Route>
-
-        </switch>
+        </Switch>
       </Router>
-      
+       
        
     </div>
   );
