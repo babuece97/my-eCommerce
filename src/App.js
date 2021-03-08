@@ -11,6 +11,7 @@ import {
 import Rreview from './components/Revieww/Rreview';
 import Managee from './components/MiNven/Managee';
 import NotMatch from './components/NotMatch/NotMatch';
+import ProductDetailf from './components/ProductDetail/ProductDetailf';
 
 
 
@@ -32,6 +33,10 @@ function App() {
           </Route>
           <Route  exact path="/">
           <Shoppp></Shoppp> 
+          </Route>
+          <Route path="/producT/:prdKey"> 
+            <ProductDetailf></ProductDetailf>
+
           </Route>
              <Route path="*">
               <NotMatch></NotMatch>
