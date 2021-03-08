@@ -5,7 +5,7 @@ import './pRdct.css';
 import { Link } from 'react-router-dom';
 
 const fProducttt = (props) => {
-    console.log(props.item.key);
+    console.log(props);
     const { category, name, img, seller, stock, star, price ,key} = props.item; // DEstructing
     return (
         <div className="item">
@@ -25,8 +25,13 @@ const fProducttt = (props) => {
 
                 <h3>{category} productS</h3>
                 <h3>{star}  stars  bY usErs</h3>
-                <button className="item-button"
-                onClick= {()=>props.handelADDDiTemmm(props.item)}><FontAwesomeIcon icon={faShoppingCart} />aDD to cArt</button>
+                { props.showAddToCart && 
+                    <button 
+                    className="item-button"
+                onClick= {()=>props.handelADDDiTemmm(props.item)}
+                >
+                    <FontAwesomeIcon icon={faShoppingCart} />aDD to cArt
+                </button>}
             </div> 
             {/* with parameter */}
 
