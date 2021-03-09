@@ -5,7 +5,7 @@ import './pRdct.css';
 import { Link } from 'react-router-dom';
 
 const fProducttt = (props) => {
-    console.log(props);
+    // console.log(props);
     const { category, name, img, seller, stock, star, price ,key} = props.item; // DEstructing
     return (
         <div className="item">
