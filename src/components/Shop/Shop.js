@@ -13,11 +13,21 @@ const Shop = () => {
 //    console.log(firstEleven);
 
    const handelADDDiTemmm =(jinish)=> {
-    //    console.log('jinis added', jinish);
-       const newCart = [...cart, jinish];
-       setCart(newCart);
-       const sameItem = newCart.filter(prd=>prd.key === jinish.key);
-       const count =sameItem.length;
+    const toBeAddedKey = jinish.key;
+    const sameItem = cart.find(prd=>prd.key === toBeAddedKey.key);
+    let count =1;
+    let newCart;
+    if (sameItem){
+        const count = sameItem.quantity +1;
+        sameItem.quantity= count;
+        const others = cart.filter(prd => prd.key !== toBeAddedKey );
+        newCart =[...others, sameItem];
+    }
+    else {
+        jinish.quantity  = 1;
+        newCart =[...cart, jinish];
+    }  
+       setCart(newCart); 
        addToDatabaseCart(jinish.key,count);
    }
   
